@@ -1,0 +1,20 @@
+<?php
+return [
+    'Feedback' => 'Feedback',
+    'View feedback' => 'Ver feedback',
+    'Feedback deleted' => 'Feedback eliminada',
+    'Feedback updated' => 'Feedback actualizada',
+    'Answer' => 'Responder',
+    'Subject' => 'Tema',
+    'Phone' => 'Teléfono',
+    'No answer' => 'Sin respuesta',
+    'Hello,' => 'Hola',
+    'Answer on your feedback message' => 'Responder a su mensaje de feedback',
+    'Best regards.' => 'Atentamente',
+    'Answer successfully sent' => 'Respuesta enviada correctamente',
+    'Mark as answered' => 'Marcar como contestado',
+    'feedback answer' => 'Respuesta de feedback',
+    'Please fill correct `Admin E-mail` in Settings' => 'Por favor, rellene correctamente "Administrador de E-mail" en Ajustes',
+    'Are you sure you want to resend the answer?' => '¿Está seguro de que desea reenviar la respuesta?',
+    'An error has occurred while sending mail' => 'Ha ocurrido un error al enviar el correo',
+];

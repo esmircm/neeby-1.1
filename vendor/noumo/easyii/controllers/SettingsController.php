@@ -89,4 +89,14 @@ class SettingsController extends \yii\easyii\components\Controller
         }
         return $this->formatResponse(Yii::t('easyii', 'Setting deleted'));
     }
+    public function actionColor()
+    {
+          $color = $_POST['color'];
+          $usuario = $_POST['usuario'];
+        
+        Yii::$app->db->createCommand() // update del color del tema
+        ->update('color_tema', ['color' => $color], 'usuario_id ='.$usuario)->execute();
+        
+        
+    }
 }

@@ -33,7 +33,15 @@ class AdminsController extends \yii\easyii\components\Controller
                 return ActiveForm::validate($model);
             }
             else{
+                
                 if($model->save()){
+
+                    Yii::$app->db->createCommand() // insert del color del tema por defecto "black"
+                    ->insert('color_tema', [
+                                    'usuario_id' => $model->attributes["admin_id"],
+                                    'color' => 'black',])
+                    ->execute();
+                    
                     $this->flash('success', Yii::t('easyii', 'Admin created'));
                     return $this->redirect(['/admin/admins']);
                 }

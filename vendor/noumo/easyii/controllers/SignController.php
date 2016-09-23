@@ -11,8 +11,8 @@ class SignController extends \yii\web\Controller
 
     public function actionIn()
     {
-        $model = new models\LoginForm;
 
+        $model = new models\LoginForm;
         if (!Yii::$app->user->isGuest || ($model->load(Yii::$app->request->post()) && $model->login())) {
             return $this->redirect(Yii::$app->user->getReturnUrl(['/admin']));
         } else {

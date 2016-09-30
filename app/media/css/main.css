@@ -17736,44 +17736,86 @@ table.plans-table .card
 	font-weight: 100;
 }
 
+/*RESPONSE DE IMAGENES DENTRO DE LA LAPTO PRIMERA FOTO*/
+.foto1 {
+   border: 1px solid #000;
+   background: url(../inicio_neeby.png) no-repeat center center;
+   width: 100%;
+   height: 400px;
+   display: none;
+}   
+@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5) {
+ .foto1 {
+   border: 1px solid #000;
+   background: url(../inicio_neeby.png) no-repeat center center;
+   background-size: 100% 100%;
+   /*width: 100%;*/
+   /*height: 150px;*/
+   display: block;
+}  
+}  
+
+/* FIN RESPONSE DE IMAGENES DENTRO DE LA LAPTO PRIMERA FOTO*/
 
 
 .laptop-slides .hoola 
 {
-	background-image: url(../NeebyCMS2.png);
+	background-image: url(../inicio_neeby.png); /*IMAGEN 1 DENTRO DE LA LAPTO*/ 
 	
 }
-@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5) 
-{
-	.laptop-slides .hoola 
-	{
-		background-image: url(../NeebyCMS2.png);
-	}
-}
+
+/* RESPONSE DE IMAGENES DENTRO DE LA LAPTO SEGUNDA FOTO*/
+.foto2 {
+   border: 1px solid #000;
+   background: url(../salida.gif) no-repeat center center;
+   width: 100%;
+   height: 400px;
+   display: none;
+}   
+@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5) {
+ .foto2 {
+   border: 1px solid #000;
+   background: url(../salida.gif) no-repeat center center;
+   background-size: 100% 100%;
+   /*width: 100%;*/
+   /*height: 150px;*/
+   display: block;
+}  
+}  
+/* FIN RESPONSE DE IMAGENES DENTRO DE LA LAPTO SEGUNDA FOTO*/
+
 .laptop-slides .hoola2  
 {
-	background-image: url(../NeebyCMS3.png);
+	background-image: url(../salida.gif); /*IMAGEN 2 DENTRO DE LA LAPTO*/ 
 	
 }
-@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5) 
-{
-	.laptop-slides .hoola2 
-	{
-		background-image: url(../NeebyCMS3.png);
-	}
-}
+/* RESPONSE DE IMAGENES DENTRO DE LA LAPTO TERCERA FOTO*/
+
+.foto3 {
+   border: 1px solid #000;
+   background: url(../admin_neeby.png) no-repeat center center;
+   width: 100%;
+   height: 400px;
+   display: none;
+}   
+@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5) {
+ .foto3 {
+   border: 1px solid #000;
+   background: url(../admin_neeby.png) no-repeat center center;
+   background-size: 100% 100%;
+   /*width: 100%;*/
+   /*height: 150px;*/
+   display: block;
+}  
+} 
+/* FIN RESPONSE DE IMAGENES DENTRO DE LA LAPTO TERCERA FOTO*/
+
 .laptop-slides .hoola3  
 {
-	background-image: url(../screen-03.jpg);
+	background-image: url(../admin_neeby.png); /*IMAGEN 3 DENTRO DE LA LAPTO*/ 
 	
 }
-@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5) 
-{
-	.laptop-slides .hoola3 
-	{
-		background-image: url(../screen-03.jpg);
-	}
-}
+
 
 .laptop-slides .hoola4  
 {

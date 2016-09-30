@@ -11,7 +11,7 @@ $asset = \app\assets\AppAsset::register($this);
         <?= Html::csrfMetaTags() ?>
         
         <link rel="shortcut icon" href="<?= $asset->baseUrl ?>/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="<?= $asset->baseUrl ?>/favicon.ico" type="image/x-icon">z
+        <link rel="icon" href="<?= $asset->baseUrl ?>/favicon.ico" type="image/x-icon">
         <?php $this->head() ?>
     </head>
     <body>

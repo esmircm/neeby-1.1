@@ -36,11 +36,11 @@ $goodsCount = count(Shopcart::goods());
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#tf-home" class="page-scroll">Inicio</a></li>
                         <li><a href="#tf-about" class="page-scroll">Quienes Somos</a></li>
-                        <li><a href="#tf-team" class="page-scroll">Equipo</a></li>
+                        <li><a href="#tf-hom" class="page-scroll">Neeby CMS</a></li>
                         <li><a href="#tf-services" class="page-scroll">Servicios</a></li>
-                        <li><a href="#tf-works" class="page-scroll">Portfolio</a></li>
-                        <li><a href="#tf-testimonials" class="page-scroll">Testimonios</a></li>
-                        <li><a href="#tf-contact" class="page-scroll">Contactos</a></li>
+                        <!--<li><a href="#tf-works" class="page-scroll">Portfolio</a></li>-->
+                        <!--<li><a href="#tf-testimonials" class="page-scroll">Testimonios</a></li>-->
+                        <li><a href="#tf-con" class="page-scroll">Contactos</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -62,23 +62,31 @@ $goodsCount = count(Shopcart::goods());
     <div class="push"></div>
 </main>
 
-<footer>
-    <div class="container footer-content">
-        <div class="row">
-            <div class="col-md-2">
-                Suscribirse a Boletines de Noticias
-            </div>
-            <div class="col-md-6">
-                <?php if (Yii::$app->request->get(Subscribe::SENT_VAR)) : ?>
+
+<nav id="footer">
+    <div class="container">
+        <div class="pull-left fnav">
+            
+            <p>Suscribirse a Boletines de Noticias</p>
+            <?php if (Yii::$app->request->get(Subscribe::SENT_VAR)) : ?>
                     Se ha suscrito
                 <?php else : ?>
                     <?= Subscribe::form() ?>
                 <?php endif; ?>
-            </div>
-            <div class="col-md-4 text-right">
-                ©2016 Neeby
-            </div>
+                    
+        </div>
+     
+        <div class="pull-right fnav"> 
+             
+                    
+            <ul class="footer-social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+            <p>TODOS LOS DERECHOS RESERVADOS. COPYRIGHT © 2016. NEEBY</p>
         </div>
     </div>
-</footer>
+</nav>
 <?php $this->endContent(); ?>
